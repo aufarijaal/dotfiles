@@ -6,8 +6,8 @@ Whats inside this Dotfiles? check below
 - [atom's command palette inspired (with dracula scheme)](rofi/dracula.rasi)
   <br>
   <br>
-  ![dracula rasi](ss/dracula-command-pallete.png)
+  ![dracula rasi](ss/dracula-command-pallete.gif)
 - [breath2 style](rofi/breath2.rasi)
   <br>
   <br>
-  ![breath2 rasi](ss/breath2.png)
+  ![breath2 rasi](ss/breath2.gif)
