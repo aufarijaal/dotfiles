@@ -1,1 +1,82 @@
-/home/aufa/.config/rofi/dracula.rasi
+window {
+  location:   north;
+  anchor:   north;
+  /* border-radius: 5; */
+  /* y-offset: 5px; */
+}
+* {
+  background-color: #272935;
+  spacing: 0;
+  lines: 10; /*Number of entries to display*/
+  width: 600px;
+}
+
+mainbox {
+  border: 0 3px 3px 3px;
+  border-color: #21222C;
+}
+inputbar {
+  border: 2px;
+  border-radius: 5;
+  margin: 8px 8px 0 8px;
+  border-color: #8AE9FD;
+  children: [ icon-key , entry ];
+}
+
+/* prompt {
+  padding: 8px;
+  text-color: #21222C;
+  background-color: #8AE9FD;
+  font: "Iosevka Bold 11";
+} */
+
+icon-key {
+  expand: false;
+  filename: "gnome-searchtool";
+  size: 16;
+  padding: 8px;
+  vertical-align: 0.5;
+}
+
+textbox {
+  background-color: #2e343f;
+  border: 0 0 1px 0;
+  border-color: #282C33;
+  padding: 8px 16px;
+}
+
+entry {
+  padding: 8px;
+  background-color: #101115;
+  text-color: #FFFFFF;
+  font: "Manrope Bold 11";
+}
+
+listview {
+  cycle: false;
+  margin: 8px;
+  /* padding: 8px; */
+  scrollbar: true;
+  border-color: #21222C;
+  border: 1px;
+}
+scrollbar {
+  width: 8px;
+  border: 0;
+  handle-color: #8AE9FD;
+  handle-width: 5px;
+  padding: 0 3px 3px 3px;
+}
+element {
+  border: 0 0 1px 0;
+  padding: 14px;
+  text-color:#B5BDEF;
+  font: "Manrope 9";
+  background-color: #2B2E3B;
+  border-color: #21222C;
+}
+
+element selected {
+  background-color: #383B4C;
+  text-color: #ffffff;
+}
