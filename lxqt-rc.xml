@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Triste-Crimson</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>Dracula</name>
+    <titleLayout>CIMSL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -153,10 +153,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>5</top>
-    <bottom>29</bottom>
-    <left>5</left>
-    <right>5</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -247,21 +247,64 @@
         <to>4</to>
       </action>
     </keybind> -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>pcmanfm-qt</command>
+      </action>
+    </keybind>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>konsole</command>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>synaptic-pkexec</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>flameshot gui</command>
+      </action>
+    </keybind>
+    <keybind key="S-Print">
+      <action name="Execute">
+        <command>peek --no-headerbar</command>
+      </action>
+    </keybind>    
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <keybind key="W-Up">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="W-S-r">
+    <keybind key="W-r">
       <action name="Reconfigure"/>
     </keybind>
+    <keybind key="W-S-r">
+      <action name="Restart"/>
+    </keybind>    
     <keybind key="W-space">
       <action name="Iconify"/>
     </keybind>
     <keybind key="W-S-s">
       <action name="ToggleShade"/>
     </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>playerctl play-pause</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>playerctl previous</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>playerctl next</command>
+      </action>
+    </keybind>    
     <keybind key="W-KP_Subtract">
       <action name="Execute">
         <command>transset --dec 0.10 -p</command>
@@ -911,9 +954,6 @@
 
   # end of the example
 -->
-    <application class="*">
-      <decor>no</decor>
-    </application>
     <application class="*">
       <position force="no">
         <x>center</x>
