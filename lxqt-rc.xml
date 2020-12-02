@@ -153,10 +153,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>5</top>
+    <bottom>29</bottom>
+    <left>5</left>
+    <right>5</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -203,12 +203,6 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="S-A-Right">
       <action name="SendToDesktop">
         <to>right</to>
@@ -226,27 +220,55 @@
         <to>down</to>
         <wrap>no</wrap>
       </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="GoToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="GoToDesktop">
-        <to>4</to>
-      </action>
     </keybind> -->
+    <keybind key="W-S-Left">
+      <action name="SendToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-S-Right">
+      <action name="SendToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-A-Left">
+      <action name="GoToDesktop">
+        <to>left</to>
+      </action>
+    </keybind>
+    <keybind key="W-A-Right">
+      <action name="GoToDesktop">
+        <to>right</to>
+      </action>
+    </keybind>
+
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>vivaldi-stable</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-b">
+      <action name="Execute">
+        <command>qutebrowser</command>
+      </action>
+    </keybind>
+    <keybind key="W-g">
+      <action name="Execute">
+        <command>gpick</command>
+      </action>
+    </keybind>
+    <keybind key="W-v">
+      <action name="Execute">
+        <command>code</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-v">
+      <action name="Execute">
+        <command>subl</command>
+      </action>
+    </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <command>pcmanfm-qt</command>
@@ -271,7 +293,7 @@
       <action name="Execute">
         <command>peek --no-headerbar</command>
       </action>
-    </keybind>    
+    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -283,7 +305,7 @@
     </keybind>
     <keybind key="W-S-r">
       <action name="Restart"/>
-    </keybind>    
+    </keybind>
     <keybind key="W-space">
       <action name="Iconify"/>
     </keybind>
@@ -304,7 +326,7 @@
       <action name="Execute">
         <command>playerctl next</command>
       </action>
-    </keybind>    
+    </keybind>
     <keybind key="W-KP_Subtract">
       <action name="Execute">
         <command>transset --dec 0.10 -p</command>
@@ -338,7 +360,7 @@
     </keybind>
     <keybind key="W-a">
       <action name="Execute">
-        <command>rofi -config /home/aufa/.config/rofi/dracula.rasi -show drun -show-icons -icon-theme Qogir-manjaro-dark</command>
+        <command>rofi -config /home/aufa/.config/rofi/mac.rasi -show drun -show-icons -icon-theme Qogir-manjaro-dark</command>
       </action>
     </keybind>
     <keybind key="W-S-q">
