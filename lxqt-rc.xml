@@ -279,9 +279,19 @@
         <command>konsole</command>
       </action>
     </keybind>
+    <keybind key="W-A-t">
+      <action name="Execute">
+        <command>urxvt</command>
+      </action>
+    </keybind>
     <keybind key="W-s">
       <action name="Execute">
         <command>synaptic-pkexec</command>
+      </action>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>scrot '/home/aufa/Pictures/ss/%d_%m_%Y_%T.png'</command>
       </action>
     </keybind>
     <keybind key="Print">
