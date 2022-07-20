@@ -1,0 +1,131 @@
+resistance
+  strength 10
+  screen_edge_strength 20
+focus
+  focusNew yes
+  followMouse no
+  focusLast yes
+  underMouse no
+  focusDelay 200
+  raiseOnFocus no
+placement
+  policy Smart
+  center yes
+  monitor Primary
+  primaryMonitor 1
+  //- Theme Section
+  //
+    available characters are NDSLIMC, each can occur at most once.
+    N: window icon
+    L: window label (AKA title).
+    I: iconify
+    M: maximize
+    C: close
+    S: shade (roll up/down)
+    D: omnipresent (on all desktops).
+dasdsa
+theme
+  name Vent
+  titleLayout CIMSL
+  keepBorder yes
+  animateIconify no
+
+  // size: in points
+  // weight: Bold or Normal
+  // slant: Italic or Normal
+  font(place="ActiveWindow")
+    name Ubuntu
+    size 9
+    weight Bold
+    slant Normal
+  font(place="InactiveWindow")
+    name Ubuntu
+    size 9
+    weight Normal
+    slant Normal
+  font(place="MenuHeader")
+    name Ubuntu
+    size 9
+    weight Normal
+    slant Normal
+  font(place="MenuItem")
+    name Ubuntu
+    size 9
+    weight Normal
+    slant Normal
+  font(place="ActiveOnScreenDisplay")
+    name Ubuntu
+    size 9
+    weight Normal
+    slant Normal
+  font(place="InactiveOnScreenDisplay")
+    name Ubuntu
+    size 9
+    weight Normal
+    slant Normal
+
+desktops
+  //
+    this stuff is only used at startup, 
+    pagers allow you to change them during a session
+
+    these are default values to use when other ones are not already set
+    by other applications, or saved in your session
+
+    use obconf if you want to change these without having to log out
+    and back in
+  number 4
+  firstdesk 1
+
+  // set names up here if you want to, like this:
+  //- editing in compiled rc-new.xml
+  //  <name>desktop 1</name>
+  //  <name>desktop 2</name>
+  //- editing in this file
+  //- name desktop 1
+  //- name desktop 2
+  names
+
+  // The number of milliseconds to show the popup for when switching
+      desktops.  Set this to 0 to disable the popup.
+  popupTime 875
+
+resize
+  drawContents yes
+  // 'Always', 'Never', or 'Nonpixel' (xterms and such)
+  popupShow Nonpixel
+  popupPosition Center
+  // these are used if popupPosition is set to 'Fixed'
+  popupFixedPosition
+    // positive number for distance from left edge, negative number for
+      distance from right edge, or 'Center'
+    x 10
+    // positive number for distance from top edge, negative number for
+      distance from bottom edge, or 'Center'
+    y 10
+
+// You can reserve a portion of your screen where windows will not cover when
+     they are maximized, or when they are initially placed.
+     Many programs reserve space automatically, but you can use this in other
+     cases.
+margins
+  top 25
+  bottom 3
+  left 3
+  right 3
+dock
+  // (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating
+  position TopLeft
+  floatingX 0
+  floatingY 0
+  noStrut no
+  // 'Above', 'Normal', or 'Below'
+  stacking Above
+  // 'Vertical' or 'Horizontal'
+  direction Vertical
+  autoHide no
+  // in milliseconds (1000 = 1 second)
+  hideDelay 300
+  showDelay 300
+  // 'Left', 'Middle', 'Right'
+  moveButton Middle
