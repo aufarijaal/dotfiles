@@ -16,3 +16,5 @@ if you want to write the openbox config same way as me, you can follow these ste
 4. run `npm install` or `npm i` to install package listed in package.json
 5. run `npm run render` to compile config once or `npm run watch` to auto update and restart while editing the config.
 6. you are ready to edit the config file. Configuration located in `/openbox/src/rc.pug`
+
+**Note:** don't forget to create symbolic link for each config from this dotfiles folder to your own config folder.
