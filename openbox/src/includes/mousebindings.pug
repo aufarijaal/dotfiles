@@ -1,0 +1,273 @@
+mouse
+  dragThreshold 1
+  doubleClickTime 500
+  screenEdgeWarpTime 400
+  screenEdgeWarpMouse false
+
+  context(name="Frame")
+    mousebind(button="A-Left" action="Press")
+      action(name="Focus")
+      action(name="Raise")
+
+    mousebind(button="A-Left" action="Click")
+      action(name="Unshade")
+
+    mousebind(button="W-Left" action="Drag")
+      action(name="Move")
+
+    mousebind(button="A-Right" action="Press")
+      action(name="Focus")
+      action(name="Raise")
+      action(name="Unshade")
+
+    mousebind(button="W-S-Left" action="Drag")
+      action(name="Resize")
+
+    mousebind(button="A-Middle" action="Press")
+      action(name="Lower")
+      action(name="FocusToBottom")
+      action(name="Unfocus")
+
+    mousebind(button="A-Up" action="Click")
+      action(name="GoToDesktop")
+        to previous
+
+    mousebind(button="A-Down" action="Click")
+      action(name="GoToDesktop")
+        to next
+
+    mousebind(button="C-A-Up" action="Click")
+      action(name="GoToDesktop")
+        to previous
+
+    mousebind(button="C-A-Down" action="Click")
+      action(name="GoToDesktop")
+        to next
+
+    mousebind(button="A-S-Up" action="Click")
+      action(name="SendToDesktop")
+        to previous
+
+    mousebind(button="A-S-Down" action="Click")
+      action(name="SendToDesktop")
+        to next
+
+  context(name="Titlebar")
+    mousebind(button="Left" action="Drag")
+      action(name="Unmaximize")
+      action(name="Move")
+
+    mousebind(button="Left" action="DoubleClick")
+      action(name="ToggleMaximize")
+
+    mousebind(button="Up" action="Click")
+      action(name="if")
+        shaded no
+        then
+          action(name="Shade")
+          action(name="FocusToBottom")
+          action(name="Unfocus")
+          action(name="Lower")
+
+    mousebind(button="Down" action="Click")
+      action(name="if")
+        shaded yes
+        then
+          action(name="Unshade")
+          action(name="Raise")
+  context(name='Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    mousebind(button='Middle', action='Press')
+      action(name='Lower')
+      action(name='FocusToBottom')
+      action(name='Unfocus')
+    mousebind(button='Right', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='ShowMenu')
+        menu client-menu
+  context(name='Top')
+    mousebind(button='Left', action='Drag')
+      action(name='Resize')
+        edge top
+  context(name='Left')
+    mousebind(button='Left', action='Drag')
+      action(name='Resize')
+        edge left
+  context(name='Right')
+    mousebind(button='Left', action='Drag')
+      action(name='Resize')
+        edge right
+  context(name='Bottom')
+    mousebind(button='Left', action='Drag')
+      action(name='Resize')
+        edge bottom
+    
+    mousebind(button='Right', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='ShowMenu')
+        menu client-menu
+  context(name='TRCorner BRCorner TLCorner BLCorner')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    
+    mousebind(button='Left', action='Drag')
+      action(name='Resize')
+
+  context(name='Client')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+    
+    mousebind(button='Middle', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+    
+    mousebind(button='Right', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+  context(name='Icon')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+      action(name='ShowMenu')
+        menu client-menu
+    
+    mousebind(button='Right', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='ShowMenu')
+        menu client-menu
+  context(name='AllDesktops')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    
+    mousebind(button='Left', action='Click')
+      action(name='ToggleOmnipresent')
+
+  context(name='Shade')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+    
+    mousebind(button='Left', action='Click')
+      action(name='ToggleShade')
+
+  context(name='Iconify')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+    
+    mousebind(button='Left', action='Click')
+      action(name='Iconify')
+
+  context(name='Maximize')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    
+    mousebind(button='Middle', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    
+    mousebind(button='Right', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    
+    mousebind(button='Left', action='Click')
+      action(name='ToggleMaximize')
+    
+    mousebind(button='Middle', action='Click')
+      action(name='ToggleMaximize')
+        direction vertical
+    
+    mousebind(button='Right', action='Click')
+      action(name='ToggleMaximize')
+        direction horizontal
+
+  context(name='Close')
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+      action(name='Unshade')
+    
+    mousebind(button='Left', action='Click')
+      action(name='Close')
+
+  context(name='Desktop')
+    mousebind(button='Up', action='Click')
+      action(name='PreviousWindow')
+        dialog icons
+        raise yes
+        finalactions
+          action(name='Focus')
+          action(name='Raise')
+          action(name='Unshade')
+    mousebind(button='Down', action='Click')
+      action(name='NextWindow')
+        dialog icons
+        raise yes
+        finalactions
+          action(name='Focus')
+          action(name='Raise')
+          action(name='Unshade')
+    mousebind(button='A-Up', action='Click')
+      action(name='GoToDesktop')
+        to previous
+    mousebind(button='A-Down', action='Click')
+      action(name='GoToDesktop')
+        to next
+    mousebind(button='C-A-Up', action='Click')
+      action(name='GoToDesktop')
+        to previous
+    mousebind(button='C-A-Down', action='Click')
+      action(name='GoToDesktop')
+        to next
+    mousebind(button='Left', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+    mousebind(button='Right', action='Press')
+      action(name='Focus')
+      action(name='Raise')
+
+  context(name='Root')
+    // Menus
+    mousebind(button='Middle', action='Press')
+      action(name='ShowMenu')
+        menu client-list-combined-menu
+
+    mousebind(button='Right', action='Press')
+      action(name='ShowMenu')
+        menu root-menu
+        
+  context(name='MoveResize')
+    mousebind(button='Up', action='Click')
+      action(name='GoToDesktop')
+        to previous
+
+    mousebind(button='Down', action='Click')
+      action(name='GoToDesktop')
+        to next
+
+    mousebind(button='A-Up', action='Click')
+      action(name='GoToDesktop')
+        to previous
+
+    mousebind(button='A-Down', action='Click')
+      action(name='GoToDesktop')
+        to next
+
+
+

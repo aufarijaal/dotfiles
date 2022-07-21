@@ -1,12 +1,11 @@
 {
   "name": "dotfiles",
   "version": "1.0.0",
-  "description": "Whats inside this Dotfiles? check below",
+  "description": "My Dotfiles",
   "main": "index.js",
   "scripts": {
-    "render": "node ./openbox/test/render.js",
-    "watch": "nodemon ./openbox/test/render.js -e pug",
-    "format": "./node_modules/.bin/prettier --tab-width 2 --single-attribute-per-line false --write openbox/rc-new.xml"
+    "render": "node ./openbox/src/render.js",
+    "watch": "nodemon ./openbox/src/render.js -e pug"
   },
   "repository": {
     "type": "git",
@@ -20,9 +19,8 @@
   },
   "homepage": "https://github.com/aufarijaal/dotfiles#readme",
   "devDependencies": {
-    "@prettier/plugin-xml": "^2.2.0",
     "nodemon": "^2.0.19",
-    "prettier": "^2.7.1",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "xml-formatter": "^2.6.1"
   }
 }

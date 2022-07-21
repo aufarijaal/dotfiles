@@ -1,16 +1,18 @@
 # My Dotfiles
 
-Whats inside this Dotfiles? check below
+### Package used currently:
+- WM : Openbox
+- Compositor : [yshui/picom]('https://github.com/yshui/picom')
+- Panel : [Polybar]('https://github.com/polybar/polybar')
+- Launcher : [Rofi]('https://github.com/davatorium/rofi)
 
-## My current setup
-  ![current setup](ss/2020-10-31-214456_1366x768_scrot.png)
-## ROFI THEMES
+Btw, for openbox configuration I used node js package called [***pug***]('https://github.com/pugjs/pug'). Why I used it because I like to write my config in easy way, I don't like to type the xml tags again and again. and looks easier to read for me.
 
-- [atom's command palette inspired (with dracula scheme)](rofi/dracula.rasi)
-  <br>
-  <br>
-  ![dracula rasi](ss/dracula-command-palette.gif)
-- [breath2 style](rofi/breath2.rasi)
-  <br>
-  <br>
-  ![breath2 rasi](ss/breath2.gif)
+if you want to write the openbox config same way as me, you can follow these step:
+
+1. Make sure Node JS is installed. if not, [go here]('https://github.com/nvm-sh/nvm') (I use nvm for easier management)
+2. clone the repo `git clone https://github.com/aufarijaal/dotfiles.git`
+3. go to repo directory `cd dotfiles`
+4. run `npm install` or `npm i` to install package listed in package.json
+5. run `npm run render` to compile config once or `npm run watch` to auto update and restart while editing the config.
+6. you are ready to edit the config file. Configuration located in `/openbox/src/rc.pug`

@@ -1,0 +1,181 @@
+keyboard
+  chainQuitKey C-g
+
+  // Application Keybindings
+
+  keybind(key="W-b")
+    action(name="Execute")
+      command google-chrome
+  keybind(key="W-g")
+    action(name="Execute")
+      command gpick
+  keybind(key="W-v")
+    action(name="Execute")
+      command code
+  keybind(key="W-e")
+    action(name="Execute")
+      command thunar
+  keybind(key="W-t")
+    action(name="Execute")
+      command x-terminal-emulator
+  keybind(key="W-A-t")
+    action(name="Execute")
+      command konsole
+  keybind(key="W-s")
+    action(name="Execute")
+      command synaptic-pkexec
+  keybind(key="C-Print")
+    action(name="Execute")
+      command scrot '/home/aufa/Pictures/ss/%d_%m_%Y_%T.png'
+  keybind(key="Print")
+    action(name="Execute")
+      command flameshot gui
+
+  // Window Related Keybindings
+  keybind(key="W-d")
+    action(name="ToggleShowDesktop")
+
+  keybind(key="W-f")
+    action(name="ToggleMaximize")
+
+  keybind(key="W-r")
+    action(name="Reconfigure")
+
+  keybind(key="W-S-r")
+    action(name="Restart")
+
+  keybind(key="W-S-Down")
+    action(name="Iconify")
+  
+  keybind(key="W-S-s")
+    action(name="ToggleShade")
+  
+  // Media Player Keybindings
+
+  keybind(key="XF86AudioPlay")
+    action(name="Execute")
+      command playerctl play-pause
+
+  keybind(key="XF86AudioPrev")
+    action(name="Execute")
+      command playerctl previous
+
+  keybind(key="XF86AudioNext")
+    action(name="Execute")
+      command playerctl next
+
+  // Other Keybindings
+
+  keybind(key="XF86AudioNext")
+    action(name="Execute")
+      command playerctl next
+
+  keybind(key="W-a")
+    action(name="Execute")
+      command /home/aufa/dotfiles/polybar/skeuos-polybar/scripts/launcher.sh
+
+  keybind(key="W-q")
+    action(name="Execute")
+      command /home/aufa/dotfiles/polybar/skeuos-polybar/scripts/powermenu.sh
+
+  // Window Management Keybindings
+
+  keybind(key="W-k")
+    action(name="Execute")
+      command xkill
+
+  keybind(key="W-c")
+    action(name="Close")
+
+  keybind(key="A-Space")
+    action(name="ShowMenu")
+      menu client-menu
+
+  keybind(key="A-Tab")
+    action(name="NextWindow")
+      finalactions
+        action(name="Focus")
+        action(name="Raise")
+        action(name="Unshade")
+
+  keybind(key="A-S-Tab")
+    action(name="PreviousWindow")
+      finalactions
+        action(name="Focus")
+        action(name="Raise")
+        action(name="Unshade")
+
+  keybind(key="W-Left")
+    action(name="Unmaximize")
+    action(name="MoveResizeTo")
+      x 0
+      y 0
+      width 50%
+      height 100%
+
+  keybind(key="W-Right")
+    action(name="Unmaximize")
+    action(name="MoveResizeTo")
+      x -0
+      y 0
+      width 50%
+      height 100%
+
+  keybind(key="W-Up")
+    action(name="Unmaximize")
+    action(name="MoveResizeTo")
+      x 0
+      y 0
+      width 100%
+      height 50%
+
+  keybind(key="W-Down")
+    action(name="Unmaximize")
+    action(name="MoveResizeTo")
+      x 0
+      y -0
+      width 100%
+      height 50%
+
+  keybind(key="W-S-Up")
+    action(name="ToggleAlwaysOnTop")
+
+  keybind(key="W-S-f")
+    action(name="ToggleFullscreen")
+
+  keybind(key="W-A-c")
+    action(name="MoveResizeTo")
+      x center
+      y center
+
+  keybind(key="W-C-Left")
+    action(name="ResizeRelative")
+      left 10
+
+  keybind(key="W-C-Right")
+    action(name="ResizeRelative")
+      right 10
+
+  keybind(key="W-C-Up")
+    action(name="ResizeRelative")
+      up 10
+
+  keybind(key="W-C-Down")
+    action(name="ResizeRelative")
+      down 10
+
+  keybind(key="W-S-C-Left")
+    action(name="ResizeRelative")
+      left -10
+
+  keybind(key="W-S-C-Right")
+    action(name="ResizeRelative")
+      right -10
+
+  keybind(key="W-S-C-Up")
+    action(name="ResizeRelative")
+      up -10
+
+  keybind(key="W-S-C-Down")
+    action(name="ResizeRelative")
+      down -10

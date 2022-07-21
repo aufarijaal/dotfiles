@@ -118,7 +118,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -418,7 +418,7 @@
     </keybind>
     <keybind key="W-C-Left">
       <action name="ResizeRelative">
-        <right>-10</right>
+        <left>10</left>
       </action>
     </keybind>
     <keybind key="W-C-Right">
@@ -588,6 +588,7 @@
     </context>
     <context name="Titlebar">
       <mousebind button="Left" action="Drag">
+        <action name="Unmaximize"/>
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
@@ -779,9 +780,6 @@
     </context>
     <context name="Desktop">
       <mousebind button="Up" action="Click">
-        <!-- <action name="GoToDesktop">
-          <to>previous</to>
-        </action> -->
         <action name="PreviousWindow">
           <dialog>icons</dialog>
           <raise>yes</raise>
