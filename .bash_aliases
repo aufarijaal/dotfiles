@@ -1,0 +1,12 @@
+# Bash aliases
+alias ni='npm install'
+alias nid='npm install -D'
+alias nig='npm install -g'
+alias gst='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
+alias gu='git push -u'
+alias cls='clear'
+alias apdet='sudo apt update'
+alias klin='sudo apt autoremove && sudo apt autoclean'
