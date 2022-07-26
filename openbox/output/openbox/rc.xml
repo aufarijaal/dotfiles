@@ -203,7 +203,7 @@ Many programs reserve space automatically, but you can use this in other
 cases.-->
     <margins>
         <top>
-            25
+            28
         </top>
         <bottom>
             3
@@ -212,7 +212,7 @@ cases.-->
             3
         </left>
         <right>
-            3
+            0
         </right>
     </margins>
     <dock>
@@ -285,17 +285,10 @@ cases.-->
                 </command>
             </action>
         </keybind>
-        <keybind key="W-t">
+        <keybind key="W-Return">
             <action name="Execute">
                 <command>
-                    x-terminal-emulator
-                </command>
-            </action>
-        </keybind>
-        <keybind key="W-A-t">
-            <action name="Execute">
-                <command>
-                    konsole
+                    alacritty
                 </command>
             </action>
         </keybind>
@@ -306,14 +299,14 @@ cases.-->
                 </command>
             </action>
         </keybind>
-        <keybind key="C-Print">
+        <keybind key="Print">
             <action name="Execute">
                 <command>
                     scrot '/home/aufa/Pictures/ss/%d_%m_%Y_%T.png'
                 </command>
             </action>
         </keybind>
-        <keybind key="Print">
+        <keybind key="C-Print">
             <action name="Execute">
                 <command>
                     flameshot gui
@@ -362,10 +355,38 @@ cases.-->
             </action>
         </keybind>
         <!-- Other Keybindings-->
-        <keybind key="XF86AudioNext">
+        <keybind key="XF86AudioRaiseVolume">
             <action name="Execute">
                 <command>
-                    playerctl next
+                    ~/dotfiles/scripts/volume.sh up
+                </command>
+            </action>
+        </keybind>
+        <keybind key="XF86AudioLowerVolume">
+            <action name="Execute">
+                <command>
+                    ~/dotfiles/scripts/volume.sh down
+                </command>
+            </action>
+        </keybind>
+        <keybind key="XF86AudioMute">
+            <action name="Execute">
+                <command>
+                    ~/dotfiles/scripts/volume.sh mute
+                </command>
+            </action>
+        </keybind>
+        <keybind key="XF86MonBrightnessUp">
+            <action name="Execute">
+                <command>
+                    brightnessctl s +10%
+                </command>
+            </action>
+        </keybind>
+        <keybind key="XF86MonBrightnessDown">
+            <action name="Execute">
+                <command>
+                    brightnessctl s 10%-
                 </command>
             </action>
         </keybind>
@@ -1103,6 +1124,9 @@ submenu will not be hidden until a different submenu is opened-->
 # end of the example
 -->
         <application class="*">
+            <decor>
+                no
+            </decor>
             <position force="no">
                 <x>
                     center

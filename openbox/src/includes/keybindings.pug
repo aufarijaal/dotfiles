@@ -15,19 +15,16 @@ keyboard
   keybind(key="W-e")
     action(name="Execute")
       command thunar
-  keybind(key="W-t")
+  keybind(key="W-Return")
     action(name="Execute")
-      command x-terminal-emulator
-  keybind(key="W-A-t")
-    action(name="Execute")
-      command konsole
+      command alacritty
   keybind(key="W-s")
     action(name="Execute")
       command synaptic-pkexec
-  keybind(key="C-Print")
+  keybind(key="Print")
     action(name="Execute")
       command scrot '/home/aufa/Pictures/ss/%d_%m_%Y_%T.png'
-  keybind(key="Print")
+  keybind(key="C-Print")
     action(name="Execute")
       command flameshot gui
 
@@ -66,9 +63,21 @@ keyboard
 
   // Other Keybindings
 
-  keybind(key="XF86AudioNext")
+  keybind(key="XF86AudioRaiseVolume")
     action(name="Execute")
-      command playerctl next
+      command ~/dotfiles/scripts/volume.sh up
+  keybind(key="XF86AudioLowerVolume")
+    action(name="Execute")
+      command ~/dotfiles/scripts/volume.sh down
+  keybind(key="XF86AudioMute")
+    action(name="Execute")
+      command ~/dotfiles/scripts/volume.sh mute
+  keybind(key="XF86MonBrightnessUp")
+    action(name="Execute")
+      command brightnessctl s +10%
+  keybind(key="XF86MonBrightnessDown")
+    action(name="Execute")
+      command brightnessctl s 10%-
 
   keybind(key="W-a")
     action(name="Execute")

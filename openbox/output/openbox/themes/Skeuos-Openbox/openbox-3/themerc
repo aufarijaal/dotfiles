@@ -1,13 +1,13 @@
 ### WINDOW
 
-border.width: 3
+border.width: 2
 window.client.padding.width: 0
 window.client.padding.height: 0
 window.handle.width: 0
 padding.width: 4
 padding.height: 4
-window.active.border.color: #23252E
-window.inactive.border.color: #23252E
+window.active.border.color: #6272a4
+window.inactive.border.color: #44475a
 window.active.title.separator.color: #ffffff
 window.inactive.title.separator.color: #ffffff
 window.active.client.color: #23252E
