@@ -260,7 +260,7 @@ cases.-->
         <keybind key="W-b">
             <action name="Execute">
                 <command>
-                    google-chrome
+                    x-www-browser
                 </command>
             </action>
         </keybind>
@@ -288,7 +288,7 @@ cases.-->
         <keybind key="W-Return">
             <action name="Execute">
                 <command>
-                    alacritty
+                    xfce4-terminal
                 </command>
             </action>
         </keybind>
@@ -412,7 +412,7 @@ cases.-->
                 </command>
             </action>
         </keybind>
-        <keybind key="W-c">
+        <keybind key="W-w">
             <action name="Close"></action>
         </keybind>
         <keybind key="A-Space">
