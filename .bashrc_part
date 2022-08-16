@@ -1,0 +1,6 @@
+export PATH=/usr/sbin:$PATH
+export PATH=/opt/lampp/bin:$PATH
+
+LS_COLORS="di=01;96:fi=01;91:ln=01;93:so=01;32:pi=01;33:ex=01;31:bd=34;46\
+:cd=01;34;43:su=30;41:sg=30;46:ow=30;42:tw=30;43:*.js=01;30;43:*.ts=01;30;44:\
+*.html=01;33;40:*.vue=01;30;42:*.css=01;31;40"

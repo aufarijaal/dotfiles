@@ -2,4 +2,11 @@
     "files.associations": {
         "dunstrc": "ini"
     },
+    "editor.colorDecorators": true,
+    "vscode-color-picker.languages": [
+        "python",
+        "javascript",
+        "typescript",
+        "ini"
+    ]
 }
