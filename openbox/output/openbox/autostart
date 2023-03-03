@@ -16,18 +16,27 @@
 #
 #xfce-mcs-manager &
 
+# xrandr --output HDMI-A-0 --auto --primary --output eDP --off
+/home/aufa/dotfiles/scripts/monitor_setup.sh
+
 lxpolkit &
 
 nitrogen --restore
 
-$HOME/dotfiles/polybar/skeuos-polybar/launch.sh
+polybar main -c ~/.config/polybar/config.ini &
 
 xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Tapping Enabled' 1
 
-picom &
+# picom &
+
+compton &
 
 blueman &
 
 nm-applet &
 
+dunst &
 
+tint2 &
+
+export XDG_SESSION_TYPE=x11

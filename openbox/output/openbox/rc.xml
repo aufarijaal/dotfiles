@@ -52,7 +52,7 @@ D: omnipresent (on all desktops).-->
     </placement>
     <theme>
         <name>
-            Skeuos-Openbox
+            VSCode OpenBox Theme
         </name>
         <titleLayout>
             NLIMC
@@ -68,7 +68,7 @@ D: omnipresent (on all desktops).-->
         <!-- slant: Italic or Normal-->
         <font place="ActiveWindow">
             <name>
-                Inter
+                Roboto Condensed
             </name>
             <size>
                 9
@@ -82,7 +82,7 @@ D: omnipresent (on all desktops).-->
         </font>
         <font place="InactiveWindow">
             <name>
-                Inter
+                Roboto Condensed
             </name>
             <size>
                 9
@@ -96,7 +96,7 @@ D: omnipresent (on all desktops).-->
         </font>
         <font place="MenuHeader">
             <name>
-                Inter
+                Roboto Condensed
             </name>
             <size>
                 9
@@ -110,7 +110,7 @@ D: omnipresent (on all desktops).-->
         </font>
         <font place="MenuItem">
             <name>
-                Inter
+                Roboto Condensed
             </name>
             <size>
                 9
@@ -124,7 +124,7 @@ D: omnipresent (on all desktops).-->
         </font>
         <font place="ActiveOnScreenDisplay">
             <name>
-                Inter
+                Roboto Condensed
             </name>
             <size>
                 9
@@ -138,7 +138,7 @@ D: omnipresent (on all desktops).-->
         </font>
         <font place="InactiveOnScreenDisplay">
             <name>
-                Inter
+                Roboto Condensed
             </name>
             <size>
                 9
@@ -203,13 +203,13 @@ Many programs reserve space automatically, but you can use this in other
 cases.-->
     <margins>
         <top>
-            22
+            0
         </top>
         <bottom>
             0
         </bottom>
         <left>
-            3
+            0
         </left>
         <right>
             0
@@ -218,7 +218,7 @@ cases.-->
     <dock>
         <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating-->
         <position>
-            TopLeft
+            Bottom
         </position>
         <floatingX>
             0
@@ -281,7 +281,7 @@ cases.-->
         <keybind key="W-e">
             <action name="Execute">
                 <command>
-                    thunar
+                    pcmanfm
                 </command>
             </action>
         </keybind>
@@ -393,14 +393,21 @@ cases.-->
         <keybind key="W-a">
             <action name="Execute">
                 <command>
-                    /home/aufa/dotfiles/polybar/skeuos-polybar/scripts/launcher.sh
+                    /home/aufa/dotfiles/rofi/files/launchers/type-2/launcher.sh
                 </command>
             </action>
         </keybind>
         <keybind key="W-q">
             <action name="Execute">
                 <command>
-                    /home/aufa/dotfiles/polybar/skeuos-polybar/scripts/powermenu.sh
+                    /home/aufa/dotfiles/rofi/files/powermenu/type-1/powermenu.sh
+                </command>
+            </action>
+        </keybind>
+        <keybind key="W-n">
+            <action name="Execute">
+                <command>
+                    /home/aufa/dotfiles/scripts/rofi-network-manager/rofi-network-manager.sh
                 </command>
             </action>
         </keybind>
@@ -1030,6 +1037,16 @@ submenu will not be hidden until a different submenu is opened-->
         </manageDesktops>
     </menu>
     <applications>
+        <application name="*">
+            <position force="yes">
+                <x>
+                    center
+                </x>
+                <y>
+                    center
+                </y>
+            </position>
+        </application>
         <!--# this is an example with comments through out. use these to make your
 # own rules, but without the comments of course.
 # you may use one or more of the name/class/role/title/type rules to specify
